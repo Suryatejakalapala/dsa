@@ -53,7 +53,7 @@ Here is an example of how to create an object:
 p = Person("Surya", 20)
 ```
 
-This code creates a new `Person` object with the name "Alice" and the age 25.
+This code creates a new `Person` object with the name "Surya" and the age 20.
 
 ## Methods
 
