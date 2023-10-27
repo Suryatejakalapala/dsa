@@ -72,8 +72,32 @@ Sorting is a fundamental algorithm that is used in many different applications. 
 
 **Some of the most common sorting techniques in Python include:**
 
-* **Bubble sort:** Bubble sort is a simple sorting algorithm that works by repeatedly comparing adjacent elements in a list and swapping them if they are in the wrong order.
-* **Selection sort:** Selection sort is another simple sorting algorithm that works by finding the smallest element in the unsorted list and swapping it with the first element. The algorithm then repeats this process with the remaining elements in the list.
-* **Insertion sort:** Insertion sort is a sorting algorithm that works by inserting each element of an unsorted list into the sorted part of the list in its correct position.
-* **Merge sort:** Merge sort is a divide-and-conquer sorting algorithm. It works by dividing the unsorted list into two halves, sorting each half recursively, and then merging the sorted halves back together.
-* **Quicksort:** Quicksort is another divide-and-conquer sorting algorithm. It works by partitioning the unsorted list around a pivot element and then sorting the two sublists recursively.
+## Bubble sort:
+- **Bubblesort is a simple sorting algorithm that works by repeatedly comparing adjacent elements in a list and swapping them if they are in the wrong order. Bubble sort has a best case time complexity of O(n), which occurs when the list is already sorted. However, bubble sort has an average and worst case time complexity of O(n^2), which makes it inefficient for large lists.**
+
+## Selection sort:
+- **Selectionsort is another simple sorting algorithm that works by finding the smallest element in the unsorted list and swapping it with the first element. The algorithm then repeats this process with the remaining elements in the list. Selection sort has a time complexity of O(n^2) in all cases.**
+
+## Insertion sort 
+- **Insertionsort is a sorting algorithm that works by inserting each element of an unsorted list into the sorted part of the list in its correct position. Insertion sort has a best case time complexity of O(n), which occurs when the list is already nearly sorted. However, insertion sort has an average and worst case time complexity of O(n^2), which makes it inefficient for large lists**
+
+## Merge sort 
+- **Mergesort is a divide-and-conquer sorting algorithm. It works by dividing the unsorted list into two halves, sorting each half recursively, and then merging the sorted halves back together. Merge sort has a time complexity of O(n log n) in all cases, which makes it a more efficient sorting algorithm than bubble sort, selection sort, and insertion sort for large lists.**
+
+## Quicksort 
+- **Quickort is another divide-and-conquer sorting algorithm. It works by partitioning the unsorted list around a pivot element and then sorting the two sublists recursively. Quicksort has a time complexity of O(n log n) in the average case, but it can have a worst case time complexity of O(n^2). However, the worst case of quicksort is very rare, and quicksort is generally a very efficient sorting algorithm for large lists.**
+
+## Time Complexity of the Sorting Algorithms 
+
+| Sorting Technique | Best case | Average case | Worst case |
+|---|---|---|---|
+| Bubble sort | O(n) | O(n^2) | O(n^2) |
+| Selection sort | O(n^2) | O(n^2) | O(n^2) |
+| Insertion sort | O(n) | O(n^2) | O(n^2) |
+| Merge sort | O(n log n) | O(n log n) | O(n log n) |
+| Quicksort | O(n log n) | O(n log n) | O(n^2) |
+
+
+
+
+
