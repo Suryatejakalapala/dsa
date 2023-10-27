@@ -1,22 +1,43 @@
 # Encapsulation is a way to restrict the direct access to some components of an object
+class AccessExample:
+    def __init__(self):
+        self.public_var = 'i am public variable'
+        self._prot_var = 'i am protected variable'
+        self.__private_var = 'i am private varibale'
+
+    def public_method(self):
+        print('this is public method')
+    def _prot_method(self):
+        print('this is protected method')
+    def __private_method(self):
+        print('this is private method')
+        
+    def access_all_vars_and_method(self):
+        print(self.public_var)
+        print(self._prot_var)
+        print(self.__private_var)
+        self.public_method()
+        self._prot_method()
+        self.__private_method()
+
+example = AccessExample()
 
 
-class Student:
-    def __init__(self , name , age):
-        self.name = name
-        self.__age = age
+#Accessing the public members
+print('Accessing Public memebers:')
+print(example.public_var)
+example.public_method()
 
-    def get_age(self):
-        return self.__age
-    
-    def set_age(self , new_age):
-        if 0 < new_age <= 150:
-            self.__age = new_age
+#Accessing the protectec memebers(Not enforced but a conventuon)
+print('Accesing the Protected members:')
+print(example._prot_var)
+example._prot_method()
 
-s = Student('Ali' , 20)
+#Accessing private members 
+print('Accessing the private members')
+# print(example.__private_var) # this would raise a AttributeError
+# example.__private_method() # this would raise a AttributeError
 
-print(s.name)
-print(s.get_age())
-print(s.__age)
-s.set_age(22)
-print(s.get_age())
+#Accessing all memebers
+print("Accessing all memebers")
+example.access_all_vars_and_method()
